@@ -1,0 +1,7 @@
+
+<div class="container-fluid" *ngIf='mensajeService.mensajes.length'>
+    <button type="button" class="btn btn-info" (click)="mensajeService.limpiar()">Limpiar</button>
+    <div class="alert alert-primary" role="alert" *ngFor='let mensaje of mensajeService.mensajes'>
+        {{mensajes}}
+    </div>
+</div>

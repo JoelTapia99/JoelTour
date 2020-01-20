@@ -1,0 +1,44 @@
+<div class="card text-center" *ngIf="ciudad"> 
+  <div class="card-header">
+    {{ciudad.nombre | uppercase}}
+  </div>
+  <div class="card-body">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div><span>Edición de Datos</span></div>
+          <div>
+            <label>Edición de Id:
+              <input [(ngModel)]="ciudad.id" placeholder="name"/>
+            </label>
+          </div>
+          <div>
+            <label>Edición de Idioma:
+              <input [(ngModel)]="ciudad.idioma" placeholder="idioma"/>
+            </label>
+          </div>
+          <div>
+            <label>Edición de Extención:
+              <input [(ngModel)]="ciudad.extencion" placeholder="extencion"/>
+            </label>
+          </div>
+          <div>
+            <label>Edición de Población:
+              <input [(ngModel)]="ciudad.poblacion" placeholder="poblacion"/>
+            </label>
+          </div>
+        </div>
+        <div class="col-sm">
+          <ul class="list-group">
+            <li class="list-group-item">{{ciudad.id}}</li>
+            <li class="list-group-item">{{ciudad.idioma}}</li>
+            <li class="list-group-item">{{ciudad.extencion}}</li>
+            <li class="list-group-item">{{ciudad.poblacion}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <button (click)="atras()">Atrás</button>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<h3>Top Heroes</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let ciudad of ciudades" class="col-1-4"
+  routerLink="/detalleCiudades/{{ciudad.id}}">
+    <div class="module hero">
+      <h4>{{ciudad.nombre}}</h4>
+    </div>
+  </a>
+</div>

@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <div class="list-group">
+                <a *ngFor="let ciudad of ciudades" class="list-group-item list-group-item-action list-group-item-dark"
+                    (click)="onSelect(ciudad)"  routerLink="/detalleCiudades/{{ciudad.id}}">
+                    {{ciudad.nombre}} </a>
+            </div>
+        </div>
+    </div>
+    <small id="emailHelp" class="form-text text-muted">Selecciona alguna ciudad para editar su nombre</small>
+</div>

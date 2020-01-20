@@ -1,0 +1,43 @@
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+  <a class="navbar-brand" routerLink="/ciudades">Ciudades</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/mensaje">Mensajes</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+<!-- /navbar -->
+
+<!-- hero -->
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Ciudades y lugares turisticos</h1>
+    <p class="lead">A continucacion se enlistan</p>
+  </div>
+</div>
+<!-- /hero -->
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
+
+<!-- Footer -->
+<footer class="page-footer font-small bg-primary fixed-bottom"  >
+  <div class="row justify-content-center">
+    <strong style="color: aliceblue; font-size: 20px;">Nombre:  </strong>
+    <p style="color: aliceblue; font-size: 20px;"> --Joel Tapia--</p>
+  </div>
+</footer>
+<hr>
+<hr>
+<hr>
+<!-- Footer -->
